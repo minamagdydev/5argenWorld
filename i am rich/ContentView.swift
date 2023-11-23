@@ -9,18 +9,26 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Button("mina") {
+                /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/ /*@END_MENU_TOKEN@*/
+            }
+            VStack {
+                
+                Text("i am rich")
+                    .font(.title2)
+                    .foregroundColor(.white)
+                    .multilineTextAlignment(.center)
+            }
+            .padding()
+            
         }
-        .padding()
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().previewDevice(PreviewDevice(rawValue: "iPhone SE"))
     }
 }
